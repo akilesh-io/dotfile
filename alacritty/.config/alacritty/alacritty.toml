@@ -1,0 +1,43 @@
+[window]
+dimensions = { columns = 80, lines = 24 }
+padding = { x = 5, y = 0 }
+dynamic_padding = true
+decorations = "Full"
+# decorations = "None"
+opacity = 0.95
+blur = true
+startup_mode = "Windowed"
+title = "?"
+dynamic_title = false
+decorations_theme_variant = "Dark"
+resize_increments = false
+level = "Normal"
+
+[scrolling]
+history = 20000
+multiplier = 3
+
+[font]
+normal.family = "JetBrainsMono Nerd Font"
+normal.style = "Regular"
+# normal.style = "Bold"
+# size = 11.25
+size = 12
+offset = { x = 0, y = 0 }
+builtin_box_drawing = true
+
+[selection]
+save_to_clipboard = true
+
+[keyboard]
+bindings = [
+    { key = "V", mods = "Control", action = "Paste" }
+]
+
+[general]
+import = [ "./campbell.toml" ]
+
+[terminal]
+shell = { program = "wsl" }
+osc52 = "CopyPaste"
+
